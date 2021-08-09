@@ -1,6 +1,8 @@
 import React from "react";
 import NavItem from "./navItem";
-import { ReactComponent as CaretIcon } from "./icons/caret.svg";
+import { ReactComponent as CaretIcon } from "../icons/caret.svg";
+
+import DropdownMenu from "./DropdownMenu";
 
 const Navbar = () => {
   return (
@@ -9,7 +11,7 @@ const Navbar = () => {
         <NavItem icon="😅" />
         <NavItem icon="😍" />
         <NavItem icon={<CaretIcon />}>
-          <p> this works!!</p>
+          <DropdownMenu />
         </NavItem>
       </ul>
     </nav>
